@@ -20,7 +20,7 @@ internal Encoding DetectEncoding(string filename)
 }
 ```
 
-- Example 2 : read a file in detected enconding type
+- Example 2 : read a file in detected encoding type
 
 ```C#
 internal string ReadFile(string filename)
