@@ -5,7 +5,7 @@ They did a excellent stuff in C++ at https://github.com/notepad-plus-plus/notepa
 
 So I build the code of uchardet to DLL and write a C# interface to use it, I think it is the best detector now, and it may helps C# coders a lot.
 
-## Example
+## Examples
 - Example 1 : just require the encoding type of a file or stream
 
 ```C#
@@ -20,7 +20,7 @@ internal Encoding DetectEncoding(string filename)
 }
 ```
 
-- Example 2 : read a file in detected encoding type
+- Example 2 : read a file in the detected encoding type
 
 ```C#
 internal string ReadFile(string filename)
