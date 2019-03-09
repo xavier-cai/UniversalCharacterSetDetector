@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CharDistribution.cpp" />
+    <ClCompile Include="JpCntx.cpp" />
+    <ClCompile Include="LangModels\LangArabicModel.cpp" />
+    <ClCompile Include="LangModels\LangBulgarianModel.cpp" />
+    <ClCompile Include="LangModels\LangDanishModel.cpp" />
+    <ClCompile Include="LangModels\LangEsperantoModel.cpp" />
+    <ClCompile Include="LangModels\LangFrenchModel.cpp" />
+    <ClCompile Include="LangModels\LangGermanModel.cpp" />
+    <ClCompile Include="LangModels\LangGreekModel.cpp" />
+    <ClCompile Include="LangModels\LangHebrewModel.cpp" />
+    <ClCompile Include="LangModels\LangHungarianModel.cpp" />
+    <ClCompile Include="LangModels\LangRussianModel.cpp" />
+    <ClCompile Include="LangModels\LangSpanishModel.cpp" />
+    <ClCompile Include="LangModels\LangThaiModel.cpp" />
+    <ClCompile Include="LangModels\LangTurkishModel.cpp" />
+    <ClCompile Include="LangModels\LangVietnameseModel.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="nsBig5Prober.cpp" />
+    <ClCompile Include="nsCharSetProber.cpp" />
+    <ClCompile Include="nsEscCharsetProber.cpp" />
+    <ClCompile Include="nsEscSM.cpp" />
+    <ClCompile Include="nsEUCJPProber.cpp" />
+    <ClCompile Include="nsEUCKRProber.cpp" />
+    <ClCompile Include="nsEUCTWProber.cpp" />
+    <ClCompile Include="nsGB2312Prober.cpp" />
+    <ClCompile Include="nsHebrewProber.cpp" />
+    <ClCompile Include="nsLatin1Prober.cpp" />
+    <ClCompile Include="nsMBCSGroupProber.cpp" />
+    <ClCompile Include="nsMBCSSM.cpp" />
+    <ClCompile Include="nsSBCharSetProber.cpp" />
+    <ClCompile Include="nsSBCSGroupProber.cpp" />
+    <ClCompile Include="nsSJISProber.cpp" />
+    <ClCompile Include="nsUniversalDetector.cpp" />
+    <ClCompile Include="nsUTF8Prober.cpp" />
+    <ClCompile Include="uchardet.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Big5Freq.tab" />
+    <None Include="EUCKRFreq.tab" />
+    <None Include="EUCTWFreq.tab" />
+    <None Include="GB2312Freq.tab" />
+    <None Include="JISFreq.tab" />
+    <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CharDistribution.h" />
+    <ClInclude Include="JpCntx.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="nsBig5Prober.h" />
+    <ClInclude Include="nsCharSetProber.h" />
+    <ClInclude Include="nsCodingStateMachine.h" />
+    <ClInclude Include="nscore.h" />
+    <ClInclude Include="nsEscCharsetProber.h" />
+    <ClInclude Include="nsEUCJPProber.h" />
+    <ClInclude Include="nsEUCKRProber.h" />
+    <ClInclude Include="nsEUCTWProber.h" />
+    <ClInclude Include="nsGB2312Prober.h" />
+    <ClInclude Include="nsHebrewProber.h" />
+    <ClInclude Include="nsLatin1Prober.h" />
+    <ClInclude Include="nsMBCSGroupProber.h" />
+    <ClInclude Include="nsPkgInt.h" />
+    <ClInclude Include="nsSBCharSetProber.h" />
+    <ClInclude Include="nsSBCSGroupProber.h" />
+    <ClInclude Include="nsSJISProber.h" />
+    <ClInclude Include="nsUniversalDetector.h" />
+    <ClInclude Include="nsUTF8Prober.h" />
+    <ClInclude Include="prmem.h" />
+    <ClInclude Include="uchardet.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B87DAB4A-D0A7-4161-ACAF-79287B2C2877}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>uchardet</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
